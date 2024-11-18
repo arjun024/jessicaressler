@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
-    <meta charset='UTF-8'/>
+  <meta charset='UTF-8'/>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
-    <meta content='10;url=https://instagram.com/jessress7' http-equiv='refresh'/>
+    <meta content='15;url=https://instagram.com/jessress7' http-equiv='refresh'/>
     <title>Jessica Ressler</title>
     <style>
         body {
@@ -40,14 +40,37 @@
             background: #fff;
             color: #833ab4;
         }
+        video {
+          transition: opacity 1s ease;
+          opacity: 1;
+        }
+        video.hidden {
+          opacity: 0;
+          pointer-events: none;
+        }
     </style>
     <b:skin><![CDATA[
 ]]></b:skin>
 </head>
 <body>
     <h1>Website under construction!</h1>
-    <p>Click below to get in touch via instagram</p>
+    <p>Click below to get in touch via instagram. You&#39;ll be redirected in a few seconds!</p>
     <a href='https://instagram.com/jessress7' target='_blank'>Go to @jessress7 on Instagram</a>
-    <b:section id='fixelements' showaddelement='no'/>
+
+  <video id="autoplayVideo" autoplay muted playsinline>
+    <source src="https://github.com/arjun024/jessicaressler/raw/refs/heads/gh-pages/jrdance.mp4" type="video/mp4">
+  </video>
+  <script>
+    const video = document.getElementById('autoplayVideo');
+    setTimeout(() => {
+      video.classList.add('hidden');
+    }, 1600);
+    setTimeout(() => {
+      video.remove();
+    }, 1800);
+  </script>
+
+
+<b:section id='fixelements' showaddelement='no'/>
 </body>
 </html>

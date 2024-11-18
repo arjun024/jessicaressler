@@ -57,15 +57,15 @@
     <p>Click below to get in touch via instagram. You&#39;ll be redirected in a few seconds!</p>
     <a href='https://instagram.com/jessress7' target='_blank'>Go to @jessress7 on Instagram</a>
 
-  <video id="autoplayVideo" autoplay muted playsinline>
-    <source src="https://github.com/arjun024/jessicaressler/raw/refs/heads/gh-pages/jrdance.mp4" type="video/mp4">
+  <video autoplay='true' id='autoplayVideo' muted='true' playsinline='true'>
+    <source src='https://github.com/arjun024/jessicaressler/raw/refs/heads/gh-pages/jrdance.mp4' type='video/mp4'/>
   </video>
   <script>
-    const video = document.getElementById('autoplayVideo');
-    setTimeout(() => {
-      video.classList.add('hidden');
+    const video = document.getElementById(&#39;autoplayVideo&#39;);
+    setTimeout(() =&gt; {
+      video.classList.add(&#39;hidden&#39;);
     }, 1600);
-    setTimeout(() => {
+    setTimeout(() =&gt; {
       video.remove();
     }, 1800);
   </script>
